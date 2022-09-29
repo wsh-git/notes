@@ -1,0 +1,1 @@
+exports.SHARE_FOLDER = "files";
