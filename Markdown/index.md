@@ -6,6 +6,8 @@
 
 [3、其它（个人版）](./computer/other.html)
 
+[总结](./computer/summary.html)
+
 # database
 
 [1、数据库操作相关命令记录](./computer/database.html)
