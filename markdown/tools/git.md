@@ -105,45 +105,58 @@ git reset HEAD (把当前所有已经添加到暂存区的文件全部一次性�
 
 # 8. 分支操作
 
-## 8.1 查看分支
-
-```
-git branch 查看本地当前的分支
-git brach -a 查看所有的分支
-```
-
-## 8.2 创建分支
+## 8.1 创建分支
 
 ```
 git branch 分支名称
 ```
 
-## 8.3 切换分支
-
-```
-git checkout 分支名称
-```
-
-## 8.4 创建新的分支，同时切换到新的分支上
+## 8.2 创建新的分支，同时切换到新的分支上
 
 ```
 git checkout -b 分支名称
 ：switched to a new branch 'branchname'
 ```
 
-## 8.5 删除分支
+## 8.3 本地创建新分支同时拉取远程对应的分支
+
+```
+git checkout -b newBranchName origin/newBranchName
+```
+
+## 8.4 查看分支
+
+```
+git branch 查看本地当前的分支
+git brach -a 查看所有的分支
+```
+
+## 8.5 切换分支
+
+```
+git checkout 分支名称
+```
+
+## 8.6 拉取远程分支到本地分支
+
+```
+拉取之前确保本地分支是想要接收远程对应分支内容的分支，否则会本地会自动合并远程分支的内容
+git pull origin newBranchName
+```
+
+
+
+## 8.7 删除分支
 
 ```
 git branch -d 分支名称
 ```
 
-## 8.6 合并分支
+## 8.7 合并分支
 
 ```
 git merge 被合并的分支
 ```
-
-
 
 # 9. 重命名文件夹
 
