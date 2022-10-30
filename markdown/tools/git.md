@@ -76,6 +76,18 @@ refactor:代码重构
 chore:项目构建
 ```
 
+## 5.2 推送到远程仓库
+
+```
+本地内容已经提交本地的当前分支之后，把本地的提交推送到远程仓库对应的分支上
+git push -u origin branchName
+例如：
+    git push -u origin main(默认对应的主分支)
+    git push -u origin newBranchName(推送到指定的远程仓库的分支)
+```
+
+
+
 # 6. 查看日志
 
 ```
