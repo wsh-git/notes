@@ -182,3 +182,86 @@ git add -u markdown (-u选项会更新已经追踪的文件和文件夹)
 git mv Markdown tempFolder && git mv tempFolder markdown
 ```
 
+# 常用操作
+
+```
+1、git checkout -b xxx
+
+git checkout xxx 是指切换到xxx，相当于复制了remote的仓库到本地的xxx分支上，-b意味着branch，即创建新分支，这条指令合起来意思是创建并切换到xxx。
+```
+
+```
+2、git diff
+
+查看自己对代码做出的改变，也就是查看暂存区与disk区文件的差异。
+```
+
+```
+3、git add xxx
+
+将xxx文件添加到暂存区。
+```
+
+```
+4、git commit
+
+将暂存区内容添加到local区的当前分支中。
+```
+
+```
+5、git push <RemoteHostName> <LocalBranchName>
+
+将local区的LocalBranchName分支推送到RemoteHostName主机的同名分支。（若加-f表示无视本地与远程分支的差异强行push）
+```
+
+```
+6、git branch -d xxx
+
+删除本地的git分支；
+
+git branch -D xxx
+不加-D表示创建新local分支xxx，加-D表示强制删除local分支xxx。
+```
+
+```
+7、git pull <RemoteHostName> <RemoteBranchName>
+
+同上，不过改成从远程主机下载远程分支并与本地同名分支合并。
+```
+
+```
+8、git rebase xxx
+
+假设当前分支与xxx分支存在共同部分common，该指令用xxx分支包括common在内的整体替换当前分支的common部分（原先xxx分支内容为common->diversityA，当前分支内容为common->diversityB，执行完该指令后当前分支内容为common->diversityA->diversityB）。
+```
+
+```
+9、git checkout main
+
+切换回main分支
+```
+
+```
+10、git pull origin master(main)
+
+将远端修改过的代码再更新到本地
+```
+
+```
+11、git checkout xxx
+
+回到xxx分支
+```
+
+```
+12、git rebase main 
+
+我在xxx分支上，先把main移过来，然后根据我的commit来修改成新的内容（中途可能会出现，rebase conflict -----》手动选择保留哪段代码）
+```
+
+```
+13、git push -f origin xxx
+
+把rebase后并且更新过的代码再push到远端github上 （-f ---》强行）
+```
+

@@ -1,3 +1,22 @@
+# npm
+
+## 查看模块
+
+## 安装模块
+
+```
+npm install xxx; --安装指定的模块
+npm install -g xxx; --全局安装指定的模块
+```
+
+## 移除模块
+
+```
+npm uninstall xxx;
+```
+
+
+
 # vi
 
 ```
