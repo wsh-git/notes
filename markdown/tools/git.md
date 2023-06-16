@@ -92,7 +92,11 @@ git push -u origin branchName
 
 ```
 git log
-git log --pretty=oneline 单行显示日志（可以查看的更多）
+git log --pretty=oneline 单行显示日志（可以查看的更多）+ 完整的版本号信息；
+git log --oneline 单行显示日志（可以查看的更多）+ 版本号的前7位；
+git log -- stat 查看每次提交具体的修改文件；
+git log -p 可以查看每次修改的具体的文件内容；
+git log -p 版本号前几位 可以查看指定版本修改的具体的文件内容（== git show 版本号前几位）；
 退出按键q
 
 查看提交 message
